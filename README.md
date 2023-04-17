@@ -3,9 +3,10 @@
 <br>
 ### "유미의 세포들" 팀
 
-📁 3차 프로젝트 : 관리자 페이지
+📁 3차 프로젝트 : <a href="http://mzeeyy.dothome.co.kr/fastcode/admin/login.php">관리자 페이지</a>
 
-📁 4차 프로젝트 : 사용자 페이지
+📁 4차 프로젝트 : <a href="http://mzeeyy.dothome.co.kr/fastcode/user/index.php">사용자 페이지</a>
+- ID : guset / PW : guestonly 로 모두 접속가능
 <br>
 <br>
 ## 📌 박민지 담당파트
