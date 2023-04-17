@@ -1,8 +1,8 @@
 <?php
     $hostname = 'localhost';
-    $dbuserid = 'fastcode';
-    $dbpasswd = 'yumi1212*';
-    $dbname = 'fastcode';
+    $dbuserid = 'mzeeyy';
+    $dbpasswd = 'fastcode12*';
+    $dbname = 'mzeeyy';
 
     $mysqli = new mysqli($hostname,$dbuserid, $dbpasswd,$dbname);
     if($mysqli -> connect_errno){
