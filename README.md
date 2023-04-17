@@ -3,9 +3,9 @@
 <br>
 ### "유미의 세포들" 팀
 
-📁 3차 프로젝트 : <a href="http://mzeeyy.dothome.co.kr/fastcode/admin/login.php" target="_blank">관리자 페이지</a>
+📁 3차 프로젝트 : <a href="http://mzeeyy.dothome.co.kr/fastcode/admin/login.php">관리자 페이지</a>
 
-📁 4차 프로젝트 : <a href="http://mzeeyy.dothome.co.kr/fastcode/user/index.php" target="_blank">사용자 페이지</a>
+📁 4차 프로젝트 : <a href="http://mzeeyy.dothome.co.kr/fastcode/user/index.php">사용자 페이지</a>
 - ID : guset / PW : guestonly 로 모두 접속가능
 <br>
 <br>
