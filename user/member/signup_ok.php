@@ -1,7 +1,7 @@
 <?php 
 session_start();
-include $_SERVER["DOCUMENT_ROOT"]."/inc/db.php";
-include $_SERVER["DOCUMENT_ROOT"]."/inc/lib.php";
+include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/db.php";
+include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/lib.php";
 
 $username=$_POST["username"];
 $userid=$_POST["userid"];

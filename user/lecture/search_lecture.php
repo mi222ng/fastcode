@@ -1,5 +1,5 @@
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/db.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/db.php";
 
   // 4단계 - ajax데이터 php 정상 호출
   $searchKeyword = $_POST['searchKeyword'] != "" ? $_POST['searchKeyword'] : "";

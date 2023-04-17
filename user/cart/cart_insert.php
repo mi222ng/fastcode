@@ -1,13 +1,13 @@
 <?php
     session_start();
-    include $_SERVER["DOCUMENT_ROOT"]."/inc/db.php";
+    include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/db.php";
     ini_set( 'display_errors', '0' );
 
 
 
     if(!isset($_SESSION['USERID'])){ //로그인 안되어있으면
         echo '<script> alert("로그인을 해주세요.");
-        location.href="http://fastcode.dothome.co.kr/user/member/login.php";
+        location.href="http://mzeeyy.dothome.co.kr/fastcode/user/member/login.php";
         </script>';
         exit;
     } 

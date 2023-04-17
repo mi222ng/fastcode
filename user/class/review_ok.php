@@ -1,7 +1,7 @@
 <?php
   session_start();
   ini_set('display_errors',1);
-  include $_SERVER['DOCUMENT_ROOT']."/inc/db.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/db.php";
 
   $userid = $_SESSION['USERID'];
   $username = $_SESSION['USERNAME'];

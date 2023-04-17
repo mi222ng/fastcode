@@ -1,7 +1,7 @@
 <?php
   session_start();
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/db.php";
-  include $_SERVER['DOCUMENT_ROOT']."/inc/user/head.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/db.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/head.php";
   $lecid = $_GET['lecid'];
 
   $userid = $_SESSION['USERID'];
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../css/lecture_view.css" />
 
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/user/header.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/header.php";
 
   if($_SESSION['USERID']){
     $added_condition = " and c.userid= '".$_SESSION['USERID']."'";
@@ -361,7 +361,7 @@
 
     if(!userid){
       alert('로그인을 해주세요.');
-      location.href="http://fastcode.dothome.co.kr/user/member/login.php";
+      location.href="http://mzeeyy.dothome.co.kr/fastcode/user/member/login.php";
       return;
     }
     let data = {
@@ -394,5 +394,5 @@
   }
 </script>
 <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/user/tail.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/user/tail.php";
 ?>

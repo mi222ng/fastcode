@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include $_SERVER['DOCUMENT_ROOT']."/inc/db.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/db.php";
 
     //썸네일 이미지
     if($_FILES['savefile']['size']>10240000){
@@ -15,13 +15,13 @@
         exit;
       }
   
-        $save_dir = $_SERVER['DOCUMENT_ROOT']."/pdata/";
+        $save_dir = $_SERVER['DOCUMENT_ROOT']."/fastcode/pdata/";
         $filename = $_FILES['savefile']['name'];
         $ext = pathinfo($filename,PATHINFO_EXTENSION); //확장자
         $newfilename = iconv_substr($userid,0,10).date("ymdHis").substr(rand(),0,6);
         $profile_img = $newfilename.'.'.$ext ;
         if(move_uploaded_file($_FILES['savefile']['tmp_name'], $save_dir.$savefile)){
-            $profile_img = "/pdata/".$profile_img;
+            $profile_img = "/fastcode/pdata/".$profile_img;
             $return_data = array("result" => $profile_img);
             echo json_encode($return_data);
             exit;

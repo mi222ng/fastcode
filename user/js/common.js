@@ -1,6 +1,6 @@
  // header
- let lastScrollTop = 0;
- let headerHeight = $("header").innerHeight();
+	let lastScrollTop = 0;
+	let headerHeight = $("header").innerHeight();
 	$(window).scroll(function () {
 	let scrollTop = $(this).scrollTop();
 	// Math.abs: 주어진 숫자의 절대값을 반환
@@ -14,7 +14,7 @@
 }); 
 
  // top btn
- $(window).scroll(function () {
+	$(window).scroll(function () {
 		if ($(this).scrollTop() > 250) {
 			$('.top-btn').fadeIn(100);
 		} else {

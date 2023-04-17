@@ -1,6 +1,6 @@
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/db.php";
-  include $_SERVER['DOCUMENT_ROOT']."/inc/user/head.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/db.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/head.php";
 
   $userID = $_SESSION['USERID'];
 ?>
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/lecture_list.css" />
 
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/user/header.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/header.php";
 
   $searchKeyword = $_POST['search_keyword'];
   if(isset($searchKeyword)){
@@ -167,7 +167,7 @@
   </main>
  <!-- Footer -->
   <?php
-    include $_SERVER['DOCUMENT_ROOT']."/inc/user/footer.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/footer.php";
   ?> 
    <script src="../js/common.js"></script>
 
@@ -399,5 +399,5 @@
   });
   </script>
 <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/user/tail.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/user/tail.php";
 ?>

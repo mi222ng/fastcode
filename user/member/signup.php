@@ -1,13 +1,13 @@
 <?php
-    include $_SERVER['DOCUMENT_ROOT']."/inc/user/head.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/head.php";
 ?>
 
         <link rel="stylesheet" href="../css/common.css" />
         <link rel="stylesheet" href="../css/signup.css" />
 <?php
-        include $_SERVER['DOCUMENT_ROOT']."/inc/user/header.php";
+        include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/header.php";
         if($_SESSION['USERID']){
-            echo '<script>location.href = "http://fastcode.dothome.co.kr/user/index.php";  </script>';
+            echo '<script>location.href = "http://mzeeyy.dothome.co.kr/fastcode/user/index.php";  </script>';
         }
 ?>
         <div class="inner d-flex">
@@ -228,11 +228,11 @@
             </section>
         </div>
         <?php
-        include $_SERVER['DOCUMENT_ROOT']."/inc/user/footer.php";
+        include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/footer.php";
 ?>
         <script src="../js/login.js"></script>
         <script src="../js/signup.js"></script>
 
 <?php
-    include $_SERVER['DOCUMENT_ROOT']."/inc/user/tail.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/tail.php";
 ?>

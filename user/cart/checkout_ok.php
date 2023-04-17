@@ -1,6 +1,6 @@
 <?php
 
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/db.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/db.php";
   ini_set( 'display_errors', '0' );
 
   $lecids = $_POST['lecid']; //강좌 번호

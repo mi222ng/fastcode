@@ -1,10 +1,10 @@
 <?php
-    include $_SERVER['DOCUMENT_ROOT']."/inc/user/head.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/head.php";
 ?>
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/index.css" />
 <?php
-    include $_SERVER['DOCUMENT_ROOT']."/inc/user/header_index.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/header_index.php";
 ?>
         <section class="banner swiper bannerSwiper">
             <h2 class="hidden">main banner</h2>
@@ -128,9 +128,9 @@
                     ?>
                         <li class="swiper-slide">
                             <a href="lecture/lecture_view.php?lecid=<?php echo $lr->lecid;?>">
-                                <img src="<?php echo $lr -> thumbnail; ?>" alt="<?php echo $lr -> name; ?> 대표 이미지입니다."  />
+                                <img src="<?php echo '/fastcode'.$lr -> thumbnail; ?>" alt="<?php echo $lr -> name; ?> 대표 이미지입니다."  />
                                 <h4 class="content-text-1"><?php echo $lr -> name; ?></h4>
-                                <?php include $_SERVER['DOCUMENT_ROOT']."/inc/user/tag.php"; ?>
+                                <?php include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/tag.php"; ?>
                             </a>
                         </li>
                     <?php
@@ -173,9 +173,9 @@
                     ?>
                         <li class="swiper-slide">
                             <a href="lecture/lecture_view.php?lecid=<?php echo $lr->lecid;?>">
-                                <img src="<?php echo $lr -> thumbnail; ?>" alt="<?php echo $lr -> name; ?> 대표 이미지입니다."  />
+                                <img src="<?php echo '/fastcode'.$lr -> thumbnail; ?>" alt="<?php echo $lr -> name; ?> 대표 이미지입니다."  />
                                 <h4 class="content-text-1"><?php echo $lr -> name; ?></h4>
-                                <?php include $_SERVER['DOCUMENT_ROOT']."/inc/user/tag.php"; ?>
+                                <?php include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/tag.php"; ?>
                             </a>
                         </li>
                     <?php
@@ -209,9 +209,9 @@
                     ?>
                         <li class="swiper-slide">
                             <a href="lecture/lecture_view.php?lecid=<?php echo $lr->lecid;?>">
-                                <img src="<?php echo $lr -> thumbnail; ?>" alt="<?php echo $lr -> name; ?> 대표 이미지입니다."  />
+                                <img src="<?php echo '/fastcode'.$lr -> thumbnail; ?>" alt="<?php echo $lr -> name; ?> 대표 이미지입니다."  />
                                 <h4 class="content-text-1"><?php echo $lr -> name; ?></h4>
-                                <?php include $_SERVER['DOCUMENT_ROOT']."/inc/user/tag.php"; ?>
+                                <?php include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/tag.php"; ?>
                             </a>
                         </li>
                     <?php
@@ -242,9 +242,9 @@
                     ?>
                         <li class="swiper-slide">
                             <a href="lecture/lecture_view.php?lecid=<?php echo $lr->lecid;?>">
-                                <img src="<?php echo $lr -> thumbnail; ?>" alt="<?php echo $lr -> name; ?> 대표 이미지입니다."   />
+                                <img src="<?php echo '/fastcode'.$lr -> thumbnail; ?>" alt="<?php echo $lr -> name; ?> 대표 이미지입니다."   />
                                 <h4 class="content-text-1"><?php echo $lr -> name; ?></h4>
-                                <?php include $_SERVER['DOCUMENT_ROOT']."/inc/user/tag.php"; ?>
+                                <?php include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/tag.php"; ?>
                             </a>
                         </li>
                     <?php
@@ -275,9 +275,9 @@
                     ?>
                         <li class="swiper-slide">
                             <a href="lecture/lecture_view.php?lecid=<?php echo $lr->lecid;?>">
-                                <img src="<?php echo $lr -> thumbnail; ?>" alt="<?php echo $lr -> name; ?> 대표 이미지입니다."  />
+                                <img src="<?php echo '/fastcode'.$lr -> thumbnail; ?>" alt="<?php echo $lr -> name; ?> 대표 이미지입니다."  />
                                 <h4 class="content-text-1"><?php echo $lr -> name; ?></h4>
-                                <?php include $_SERVER['DOCUMENT_ROOT']."/inc/user/tag.php"; ?>
+                                <?php include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/tag.php"; ?>
                             </a>
                         </li>
                     <?php
@@ -454,7 +454,7 @@
                                     <?php
                                         if($br -> is_img ==1){
                                     ?>
-                                        <img src="../admin/board/board_files/<?= $br -> file; ?>"  0 0 center >
+                                        <img src="../fastcode/admin/board/board_files/<?= $br -> file; ?>"  0 0 center >
                                     <?php
                                         }
                                     ?>
@@ -478,9 +478,9 @@
         </section>
 
 <?php
-    include $_SERVER['DOCUMENT_ROOT']."/inc/user/footer_index.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/footer_index.php";
 ?>        
         <script src="js/index.js"></script>
 <?php
-    include $_SERVER['DOCUMENT_ROOT']."/inc/user/tail.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/tail.php";
 ?> 

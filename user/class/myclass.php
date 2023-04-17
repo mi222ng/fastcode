@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/db.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/db.php";
 
   $userid = $_SESSION['USERID'];
   $username = $_SESSION['USERNAME'];
@@ -70,14 +70,14 @@
 ?>
 
 <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/user/head.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/user/head.php";
 ?>
 
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/myclass.css">
 
 <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/user/header.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/user/header.php";
 ?>
   <div class="class_container container">
     <div class="class_banner d-flex justify-content-between align-items-end">
@@ -150,7 +150,7 @@
         ?>
             <li class="myLec <?php echo $class; ?>" data-id="<?php echo $ml->lecid; ?>"  data-sort="<?php echo $num; ?>">
                     <figure class="myLec_img">
-                      <img src="<?php echo $ml->thumbnail; ?>" alt="<?php echo $ml->name; ?>">
+                      <img src="<?php echo '/fastcode'.$ml->thumbnail; ?>" alt="<?php echo $ml->name; ?>">
                     </figure>
                     <div class="myLec_info d-flex flex-nowrap">
                       <div class="myLec_title d-flex justify-content-between align-items-center flex-nowrap">
@@ -208,11 +208,11 @@
     </div>
   </div>
 <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/user/footer.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/user/footer.php";
 ?>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script src="../js/common.js"></script>
   <script src="../js/class.js"></script>
   <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/user/tail.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/user/tail.php";
 ?> 

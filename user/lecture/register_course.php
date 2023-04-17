@@ -1,5 +1,5 @@
 <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/db.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/db.php";
 
   $lecid = $_POST['lecid']; //강좌 번호
   $userid = $_POST['userid']; //사용자 번호

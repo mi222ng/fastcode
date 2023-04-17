@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include $_SERVER['DOCUMENT_ROOT']."/inc/db.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/db.php";
 
     $cid = $_POST['cid'];
     $sql = "DELETE from cart WHERE cartid='".$cid."'"; 

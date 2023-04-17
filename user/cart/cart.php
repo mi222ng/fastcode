@@ -1,11 +1,11 @@
 <?php ob_start();
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/db.php";
-  include $_SERVER['DOCUMENT_ROOT']."/inc/user/head.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/db.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/head.php";
 ?>
 <link rel="stylesheet" href="../css/common.css" />
 <link rel="stylesheet" href="../css/cart.css" />
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/user/header.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/header.php";
 
   if($_SESSION['USERID']){
     $added_condition = " and c.userid= '".$_SESSION['USERID']."'";
@@ -16,7 +16,7 @@
   if(!$userid){//로그인 안되어있으면
     echo '<script>
     alert("로그인을 해주세요.");
-    location.href="http://fastcode.dothome.co.kr/user/member/login.php";
+    location.href="http://mzeeyy.dothome.co.kr/fastcode/user/member/login.php";
     </script>';
   }
 
@@ -45,7 +45,7 @@
           $result2 = $mysqli->query($sql2) or die("query error => ".$mysqli->error);
         ?>
         <li class="d-flex cart_plus" id="<?php echo $l->cartid;?>" data-id="<?php echo $l->lecid;?>"> 
-          <img src="<?php echo $l->thumbnail; ?>" alt="" />
+          <img src="<?php echo '/fastcode'.$l->thumbnail; ?>" alt="" />
           <div class="cart_list_contents">
             <h3 class="content-text-1 lititle"><?php echo $l->name; ?></h3>
             <span class="content-text-1 liprice" data-price="<?php echo $l->price; ?>"><?php echo number_format($l->price);?>원</span>
@@ -133,7 +133,7 @@
 </div>
 <!-- Footer -->
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/user/footer.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/footer.php";
 ?> 
 <script src="../js/common.js"></script>
 <script>
@@ -271,5 +271,5 @@
   }
 </script>
 <?php
-    include $_SERVER['DOCUMENT_ROOT']."/inc/user/tail.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/user/tail.php";
 ?> 

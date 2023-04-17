@@ -1,7 +1,7 @@
 <?php
   session_start();
   ini_set('display_errors',1);
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/db.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/db.php";
   
   $userid = $_SESSION['USERID'];
   $username = $_SESSION['USERNAME'];
@@ -29,13 +29,13 @@
 ?>
 
 <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/user/head.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/user/head.php";
 ?>
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/class_view.css">
 
 <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/user/header.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/user/header.php";
 ?>
 
   <div class="container text-center class_view">
@@ -95,31 +95,31 @@
         <?php
           foreach($r2 as $c){
         ?>
-              <li class="lec_li d-flex align-items-center" data-src="<?php echo $c->class_url; ?>" data-name="<?php echo $c->class_name; ?>" data-idx="<?php echo $c->c_idx; ?>">
-                  <figure>
-                   <a href="#"><img src="<?php echo $c->c_thumbnail; ?>" alt="<?php echo $c->class_name; ?>"></a>
-                  </figure>
-                <div class="lec_info_box d-flex align-items-center justify-content-between">
-                  <div class="c_title d-flex align-items-start">
-                      <h3 class="content-title"><a href="#"><?php echo $c->class_name; ?></a></h3>
-                    <p class="c_desc"><?php echo $c->c_desc; ?></p>
-                  </div>  
-                  <span class="content-text-2"><?php echo $c->time; ?></span>
-                </div>
-              </li>
-      <?php 
-    }
-     ?>
+          <li class="lec_li d-flex align-items-center" data-src="<?php echo $c->class_url; ?>" data-name="<?php echo $c->class_name; ?>" data-idx="<?php echo $c->c_idx; ?>">
+              <figure>
+                <a href="#"><img src="<?php echo $c->c_thumbnail; ?>" alt="<?php echo $c->class_name; ?>"></a>
+              </figure>
+            <div class="lec_info_box d-flex align-items-center justify-content-between">
+              <div class="c_title d-flex align-items-start">
+                  <h3 class="content-title"><a href="#"><?php echo $c->class_name; ?></a></h3>
+                <p class="c_desc"><?php echo $c->c_desc; ?></p>
+              </div>  
+              <span class="content-text-2"><?php echo $c->time; ?></span>
+            </div>
+          </li>
+        <?php 
+          }
+        ?>
         </ul>
       </div>
     </div>
   </div>
 <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/user/footer.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/user/footer.php";
 ?>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script src="../js/common.js"></script>
   <script src="../js/class_view.js"></script>
 <?php
-  include $_SERVER["DOCUMENT_ROOT"]."/inc/user/tail.php";
+  include $_SERVER["DOCUMENT_ROOT"]."/fastcode/inc/user/tail.php";
 ?>
