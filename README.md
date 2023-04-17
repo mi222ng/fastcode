@@ -7,9 +7,10 @@
 📁 4차 프로젝트 : 사용자 페이지
 
 📌 박민지 담당파트
-3차 : 로그인페이지 / 대시보드페이지 / common 파일
 
-- HTML, CSS, JQUERY 사용 (Front)
-  4차 : 장바구니페이지
-- HTML, CSS, Javascritp, PHP 사용 (Front + Back)
-- 주요기능 : 장바구니 담기, 삭제, 쿠폰사용, 계산 (관련 데이터는 테이블에 반영)
+3차 : 로그인페이지 / 대시보드페이지 / common 파일
+-> HTML, CSS, JQUERY 사용 (Front)
+
+4차 : 장바구니페이지
+-> HTML, CSS, Javascritp, PHP 사용 (Front + Back)
+-> 주요기능 : 장바구니 담기, 삭제, 쿠폰사용, 계산 (관련 데이터는 테이블에 반영)
