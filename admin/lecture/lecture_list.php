@@ -162,7 +162,7 @@
               <li class="d-flex">
                 <figure class="col-md-2">
                   <!-- <img src="https://placehold.co/198x135" alt=""> -->
-                  <img src="<?php echo $r->thumbnail;?>" alt="" class="thumbnail_img_preview">
+                  <img src="<?php echo '/fastcode'.$r->thumbnail;?>" alt="" class="thumbnail_img_preview">
                 </figure>
                 <div class="lec_info_box col-md-6">
                   <div class="lec_info_title">

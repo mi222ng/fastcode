@@ -32,13 +32,13 @@
     $total_block = ceil($total_page/$block_ct);
     $start_num = ($page - 1) * $list;
 
-      /* ================== 값 조회 =================== */
+    /* ================== 값 조회 =================== */
   
-      $sql = "SELECT * from coupons order by cid desc limit $start_num, $list";
-      $result = $mysqli -> query($sql) or die("Query Error! => ".$mysqli->error);
-      while($rs = $result->fetch_object()){
-          $rsc[] = $rs;
-      }  
+    $sql = "SELECT * from coupons order by cid desc limit $start_num, $list";
+    $result = $mysqli -> query($sql) or die("Query Error! => ".$mysqli->error);
+    while($rs = $result->fetch_object()){
+      $rsc[] = $rs;
+    }  
 ?>
 
 <link rel="stylesheet" href="../css/coupon_delete.css" />
@@ -54,7 +54,7 @@
         </div> 
       </div>
       
-  <!-- 로고 및 북마크 위치 끝 -->
+<!-- 로고 및 북마크 위치 끝 -->
 
 <!-- 본문시작 -->
 
@@ -88,7 +88,7 @@
         ?>    
         <li id="<?= $r -> cid;?>"  class="coupon_list">
             <figure>
-                <img src="<?= $r -> file; ?>" alt="" />
+                <img src="<?= '/fastcode'.$r -> file; ?>" alt="" />
             </figure>
             <div class="titles">
                 <div class="big_titles">

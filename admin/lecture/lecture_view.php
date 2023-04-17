@@ -44,7 +44,7 @@
             <div class="lec_view_title_container row">
               <figure class="col-md-4">
                 <!-- <img src="https://placehold.co/442x301" alt="" /> -->
-                <img src="<?php echo $rs->thumbnail;?>" alt="" class="thumbnail_img_preview"/>
+                <img src="<?php echo '/fastcode'.$rs->thumbnail;?>" alt="" class="thumbnail_img_preview"/>
               </figure>
               <div class="lec_view_title col-md-8">
                 <p>
@@ -123,7 +123,7 @@
                 <?php foreach($attached_imgs as $ai) { ?>
                   <li>
                     <figure>
-                      <img src="../../pdata/<?php echo $ai -> filename; ?>" alt="">
+                      <img src="/fastcode/pdata/<?php echo $ai -> filename; ?>" alt="">
                     </figure>
                   </li>
                 <?php } ?>
