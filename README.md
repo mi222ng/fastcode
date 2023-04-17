@@ -14,6 +14,7 @@
 로그인페이지 / 대시보드페이지 / common 파일
 
 - HTML, CSS, JQUERY 사용 (Front)
+- 주요기능 : 사이브바 메뉴 스크롤바js, 일정 캘린더 js
 <br>
 
 ### 4차
