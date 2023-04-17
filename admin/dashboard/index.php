@@ -9,7 +9,7 @@
   };
   $book_mark = $_SESSION['ADBOOK'];
 
-  include $_SERVER['DOCUMENT_ROOT']."/inc/head.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/head.php";
 
 
 //BookMark List
@@ -286,5 +286,5 @@ ORDER BY orderNumber ASC";
 
 </script>
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/foot.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/foot.php";
 ?>

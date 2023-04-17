@@ -7,7 +7,7 @@
           </script>";
     };
 
-    include $_SERVER['DOCUMENT_ROOT']."/inc/head.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/head.php";
 
     $bno = $_GET['idx'];
 
@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="../css/board_read.css" />
 
 <?php     
-    include $_SERVER['DOCUMENT_ROOT']."/inc/common.php"; 
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/common.php"; 
 ?>
 
 
@@ -83,7 +83,7 @@
         <!-- 팝업 HTML 끝 -->
 
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/footer.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/footer.php";
 ?>
 <script
   src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
@@ -114,5 +114,5 @@
 
 
 <?php 
-    include $_SERVER['DOCUMENT_ROOT']."/inc/foot.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/foot.php";
  ?>

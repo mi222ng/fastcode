@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    include $_SERVER['DOCUMENT_ROOT']."/inc/db.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/db.php";
     ini_set( 'display_errors', '1' );
 
     $cno = $_POST['cid'];
@@ -35,14 +35,14 @@
             exit;
         }
 
-        $save_dir = $_SERVER['DOCUMENT_ROOT']."/admin/coupon/coupon_image/";//파일을 업로드할 디렉토리
+        $save_dir = $_SERVER['DOCUMENT_ROOT']."/fastcode/admin/coupon/coupon_image/";//파일을 업로드할 디렉토리
         $filename = $_FILES["file"]["name"];
         $ext = pathinfo($filename, PATHINFO_EXTENSION); //확장자 구하기
         $newfilename = "coupon_".date("YmdHis").substr(rand(),0,6);
         $coupon_image = $newfilename.".".$ext; //파일명
         
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $save_dir.$coupon_image)){
-            $coupon_image = "/admin/coupon/coupon_image/".$coupon_image;
+            $coupon_image = "/fastcode/admin/coupon/coupon_image/".$coupon_image;
         }else{
             echo "<script>alert('이미지를 등록할 수 없습니다. 관리자에게 문의해주십시오.');history.back();</script>";
             exit;

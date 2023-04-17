@@ -7,7 +7,7 @@
           </script>";
     };
 
-    include $_SERVER['DOCUMENT_ROOT']."/inc/head.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/head.php";
 
     $bno = $_GET['idx'];
     $sql = "SELECT * from board WHERE idx='{$bno}'";
@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="../css/board_write.css">
 
 <?php     
-    include $_SERVER['DOCUMENT_ROOT']."/inc/common.php"; 
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/common.php"; 
 ?>
 
 </div>
@@ -87,9 +87,9 @@
 
 
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/footer.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/footer.php";
 ?>
 
 <?php 
-    include $_SERVER['DOCUMENT_ROOT']."/inc/foot.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/foot.php";
 ?>

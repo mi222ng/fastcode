@@ -8,13 +8,13 @@
   };
   $book_mark = $_SESSION['ADBOOK'];
 
-  include $_SERVER['DOCUMENT_ROOT']."/inc/head.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/head.php";
 ?>
 
   <link rel="stylesheet" href="../css/category_list.css" />
 
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/common.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/common.php";
 
   $query = "SELECT * from category where step=3";
 
@@ -55,7 +55,7 @@
     
     
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/footer.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/footer.php";
 ?>
   <script
     src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
@@ -150,5 +150,5 @@
   </script>
 
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/foot.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/foot.php";
 ?>

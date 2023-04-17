@@ -7,7 +7,7 @@
                 history.back();
             </script>";
     };
-    include $_SERVER['DOCUMENT_ROOT']."/inc/dbcon.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/dbcon.php";
 
     ini_set('display_errors','1');
 

@@ -7,11 +7,11 @@
         </script>";
   };
 
-  include $_SERVER['DOCUMENT_ROOT']."/inc/head.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/head.php";
 ?>
     <link rel="stylesheet" href="../css/lecture_view.css" />
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/common.php";  
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/common.php";  
 
   $lecid = $_GET['lecid'];
   // echo $lecid;
@@ -178,7 +178,7 @@
           </div>
         </main>
     <?php
-        include $_SERVER['DOCUMENT_ROOT']."/inc/footer.php";
+        include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/footer.php";
     ?>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
@@ -278,5 +278,5 @@
           }
     </script>
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/foot.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/foot.php";
 ?>

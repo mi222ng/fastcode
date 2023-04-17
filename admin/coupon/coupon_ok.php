@@ -7,7 +7,7 @@
           </script>";
     };
         
-    include $_SERVER['DOCUMENT_ROOT']."/inc/db.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/db.php";
 
     
     $coupon_name = $_POST["coupon_name"];//쿠폰명
@@ -41,7 +41,7 @@
             exit;
         }
 
-        $save_dir = $_SERVER['DOCUMENT_ROOT']."/admin/coupon/coupon_image/";//파일을 업로드할 디렉토리
+        $save_dir = $_SERVER['DOCUMENT_ROOT']."/fastcode/admin/coupon/coupon_image/";//파일을 업로드할 디렉토리
         $filename = $_FILES["file"]["name"];
         $ext = pathinfo($filename, PATHINFO_EXTENSION); //확장자 구하기
         $newfilename = "coupon_".date("YmdHis").substr(rand(),0,6);

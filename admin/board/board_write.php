@@ -8,7 +8,7 @@
     };
 
     $book_mark = $_SESSION['ADBOOK'];
-    include $_SERVER['DOCUMENT_ROOT']."/inc/head.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/head.php";
 
 ?>
 
@@ -17,7 +17,7 @@
 <!-- ========= 본문시작 =========== -->
 
 <?php     
-    include $_SERVER['DOCUMENT_ROOT']."/inc/common.php"; 
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/common.php"; 
 ?>
 
         <div class="bookmark">
@@ -85,7 +85,7 @@
 
   
 <?php
-  include $_SERVER['DOCUMENT_ROOT']."/inc/footer.php";
+  include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/footer.php";
 ?>
 
 <script>
@@ -147,5 +147,5 @@ let bookmark = String(<?php echo json_encode($book_mark);?>);
 </script>
 
 <?php 
-    include $_SERVER['DOCUMENT_ROOT']."/inc/foot.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/foot.php";
  ?>

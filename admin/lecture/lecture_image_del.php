@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    include $_SERVER['DOCUMENT_ROOT']."/inc/db.php";
+    include $_SERVER['DOCUMENT_ROOT']."/fastcode/inc/db.php";
 
     ini_set('display_errors','1');
 
@@ -25,7 +25,7 @@
     $result = $mysqli -> quey($sql);
 
     if($result){
-      $delete_file = $_SERVER['DOCUMENT_ROOT']."/pdata/".$rs->filename;
+      $delete_file = $_SERVER['DOCUMENT_ROOT']."/fastcode/pdata/".$rs->filename;
       unlink($delete_file); //파일 삭제
       $return_data = array("result"=>"ok");
       echo json_encode($return_data);
