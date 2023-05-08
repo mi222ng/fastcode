@@ -22,5 +22,5 @@
 ### 4차
 장바구니페이지
 <br>
-- HTML, CSS, Javascritp, PHP 사용 (Front + Back)
+- HTML, CSS, Javascri, PHP 사용 (Front + Back)
 - 주요기능 : 장바구니 담기, 삭제, 쿠폰사용, 계산 (관련 데이터는 테이블에 반영)
