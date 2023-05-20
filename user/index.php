@@ -14,7 +14,7 @@
         <p class="point_color"><strong>구현파트</strong> : 장바구니페이지</p>
         <p class="point_color"><strong>구현언어</strong> : HTML, CSS, JQUERY, PHP (Front & Back)</p>
         <p class="point_color"><strong>주요기능</strong> : 장바구니 담기, 삭제, 쿠폰사용, 계산 (관련 데이터는 테이블에 반영)</p>
-        <p>- ID : guset / PW : guestonly 로 접속가능합니다.</p>
+        <p>- ID : guest / PW : guestonly 로 접속가능합니다.</p>
       </div>
       <hr>
       <div class="popup-content">

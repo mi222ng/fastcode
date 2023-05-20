@@ -33,7 +33,7 @@
         <p class="point_color"><strong>구현파트</strong> : 로그인페이지 / 대시보드페이지 / common 파일</p>
         <p class="point_color"><strong>구현언어</strong> : HTML, CSS, JQUERY 사용 (Front)</p>
         <p class="point_color"><strong>주요기능</strong> : 사이드바 메뉴의 스크롤바js, 일정 캘린더 js 외</p>
-        <p>- ID : guset / PW : guestonly 로 접속가능합니다.</p>
+        <p>- ID : guest / PW : guestonly 로 접속가능합니다.</p>
       </div>
       <hr>
       <div class="popup-content">
